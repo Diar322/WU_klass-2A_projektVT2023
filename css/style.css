@@ -13,6 +13,7 @@ html, body {
   margin: 0;
   height: 100%;
   background-color: whitesmoke;
+  font-size: 100%;
 }
 
 h1{
@@ -46,7 +47,6 @@ p {
   padding: 1em;
   padding-right: 25%;
   padding-left: 25%;
-  /* MÅSTE ÄNDRA PADDING *********************************/
 }
 
 .menu {
@@ -134,7 +134,7 @@ p {
 }
 
 .index_sections {
-  height: 50em;
+  height: 94vh;
   width: 100%;
 
   display: flex;
@@ -270,10 +270,7 @@ p {
 
 /* Slideshow -------------------------------------------------------------------------------------- */
 
-#maps {
-  width: 70%;
-  height: 60%;
-}
+/* index about section --------------------------------------- */
 
 #about_section {
   background-color: rgba(35, 35, 35, 1);
@@ -295,6 +292,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  gap: 10px;
 }
 
 .left h2 {
@@ -303,6 +302,7 @@ p {
 
 .left p {
   color: white;
+  text-align: center;
 }
 
 .left button {
@@ -315,9 +315,15 @@ p {
   text-align: center;
   text-decoration: none;
 
-  font-size: 1.5em;
+  font-size: 1.3em;
 
   padding: 15px 32px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.left button:hover {
+  text-decoration: underline;
 }
 
 .right {
@@ -333,8 +339,9 @@ p {
 }
 
 .right img {
-  height: 80%;
-  width: auto;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .about {
@@ -343,19 +350,90 @@ p {
   justify-content: space-evenly;
 }
 
+/* index about section end--------------------------------------- */
+
+.konsert_box {
+  width: 100%;
+  border: 5px solid black;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  padding: 10px;
+}
+
+.konsert_box img {
+  width: 100%;
+  height: auto;
+}
+
+.konsert_box p {
+  font-size: 0.9em;
+}
+
+.konsert_box h2 {
+  font-size: 1.5em;
+
+}
+
+.konsert_box button {
+  width: 80%;
+  display: none;
+  background-color: purple;
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  text-align: center;
+  text-decoration: bold;
+  font-size: 1.2em;
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.konsert_box button:hover {
+  background-color: black;
+}
+
+.konsert_box:hover button {
+  display: inline-block;
+}
+
+.index_konserter {
+  display: flex;
+  flex-direction: row;
+
+  gap: 20px;
+}
+
+/* ----------------------------------------------- */
+
+#maps {
+  width: 70%;
+  height: 60%;
+  border-radius: 20px;
+}
+
 
 
 /* Aktiveras om skärmen är mindre än 700 px */
 @media (max-width: 799px) {
   .about {
     flex-direction: column;
+    gap: 5%;
   }
 
   .left {
+    width: 100%;
   }
 
   .right {
+    width: 100%;
   }
+
+  #about_section {
+    width: 100%;
+  }
+
 
 
   .top-nav {
