@@ -1,3 +1,4 @@
+/* variabler */
 :root {
   --nav_height: 80px;
 }
@@ -20,7 +21,6 @@ h1{
   color: white;
   font-size: 10em;
   text-align: center;
-
 }
 
 h2 {
@@ -293,7 +293,6 @@ p {
   justify-content: center;
   align-items: center;
 
-  gap: 10px;
 }
 
 .left h2 {
@@ -303,6 +302,8 @@ p {
 .left p {
   color: white;
   text-align: center;
+
+  margin-bottom: 5%;
 }
 
 .left button {
@@ -310,7 +311,7 @@ p {
   color: white;
 
   border: none;
-  border-radius: 5px;
+  border-radius: 40px;
 
   text-align: center;
   text-decoration: none;
@@ -323,7 +324,7 @@ p {
 }
 
 .left button:hover {
-  text-decoration: underline;
+  background-color: black;
 }
 
 .right {
@@ -352,20 +353,36 @@ p {
 
 /* index about section end--------------------------------------- */
 
+.index_konserter {
+  width: 90%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
 .konsert_box {
   width: 100%;
-  border: 5px solid black;
+  height: 100%;
   transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  padding: 10px;
 }
 
 .konsert_box img {
+  width: 100%
+}
+
+.konsert_box section {
   width: 100%;
-  height: auto;
+  height: 50%;
+  position: relative;
 }
 
 .konsert_box p {
   font-size: 0.9em;
+  word-wrap: break-word;
 }
 
 .konsert_box h2 {
@@ -374,13 +391,18 @@ p {
 }
 
 .konsert_box button {
-  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 5px;
+
+  width: 100%;
+  height: 2em;
   display: none;
   background-color: purple;
   color: white;
 
   border: none;
-  border-radius: 5px;
 
   text-align: center;
   text-decoration: bold;
@@ -398,12 +420,7 @@ p {
   display: inline-block;
 }
 
-.index_konserter {
-  display: flex;
-  flex-direction: row;
 
-  gap: 20px;
-}
 
 /* ----------------------------------------------- */
 
@@ -417,8 +434,27 @@ p {
 
 /* Aktiveras om skärmen är mindre än 700 px */
 @media (max-width: 799px) {
-  .about {
+  .konsert_boxer {
+    height: 300vh;
+  }
+  .index_konserter {
+    height: 90%;
     flex-direction: column;
+    justify-content: space-around;
+
+  }
+
+  .konsert_box img {
+    width: 100%;
+  }
+
+  .konsert_box {
+    height: 33%;
+  }
+
+  /* about section */
+  .about {
+    flex-direction: column-reverse;
     gap: 5%;
   }
 
@@ -434,7 +470,7 @@ p {
     width: 100%;
   }
 
-
+  /* about section end*/
 
   .top-nav {
     padding: 1em;
