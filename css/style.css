@@ -11,24 +11,29 @@
 }
 
 html, body {
+  font-size: 100%;
+
   margin: 0;
   height: 100%;
   background-color: whitesmoke;
-  font-size: 100%;
 }
 
 h1{
   color: white;
-  font-size: 10em;
+  font-size: 8em;
   text-align: center;
 }
 
 h2 {
-  font-size: 2.4em;
+  font-size: 1.875em;
+}
+
+h3 {
+  font-size: 1.3em;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 /* Nav och meny */
@@ -272,14 +277,12 @@ p {
 
 /* index about section --------------------------------------- */
 
-#about_section {
-  background-color: rgba(35, 35, 35, 1);
-}
-
-#about_section {
+.about_section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
+  background-color: rgba(35, 35, 35, 1);
 }
 
 .left {
@@ -353,6 +356,17 @@ p {
 
 /* index about section end--------------------------------------- */
 
+.konsert_boxer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.konsert_boxer h2 {
+  margin-bottom: 1%;
+}
+
 .index_konserter {
   width: 90%;
 
@@ -381,13 +395,7 @@ p {
 }
 
 .konsert_box p {
-  font-size: 0.9em;
   word-wrap: break-word;
-}
-
-.konsert_box h2 {
-  font-size: 1.5em;
-
 }
 
 .konsert_box button {
@@ -424,16 +432,31 @@ p {
 
 /* ----------------------------------------------- */
 
+.index_hitta {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.index_hitta h2 {
+  margin-bottom: 2%;
+}
+
 #maps {
-  width: 70%;
-  height: 60%;
+  width: 90%;
+  height: 80%;
   border-radius: 20px;
 }
 
 
 
-/* Aktiveras om skärmen är mindre än 700 px */
+/* Aktiveras om skärmen är mindre än 700 px ----------------------------------------------------------------------------*/
 @media (max-width: 799px) {
+  h1 {
+
+  }
   .konsert_boxer {
     height: 300vh;
   }
@@ -466,8 +489,16 @@ p {
     width: 100%;
   }
 
-  #about_section {
+  .about_section {
     width: 100%;
+    height: 98vh;
+
+  }
+
+  .right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
 
   /* about section end*/
