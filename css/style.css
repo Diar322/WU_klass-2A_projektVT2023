@@ -358,7 +358,7 @@ p {
 /* index about section end--------------------------------------- */
 
 .konsert_boxer {
-  height: 70vh;
+  height: 80vh;
 
   display: flex;
   flex-direction: column;
@@ -454,6 +454,51 @@ p {
   border-radius: 20px;
 }
 
+/* FOOOOOOOOOOOOOOTER */
+
+footer {
+  width: 100%;
+  height: 25vh;
+
+  background-color: black;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  color: white;
+}
+
+footer h3 {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#adress {
+  margin-bottom: 10%;
+}
+
+#email {
+  text-decoration: underline;
+}
+/* FOOOOOOOOOOOOOTER END*/
+
 
 @media (max-width: 1000px) {
  
@@ -463,6 +508,17 @@ p {
 
 /* Aktiveras om skärmen är mindre än 800 px ----------------------------------------------------------------------------*/
 @media (max-width: 800px) {
+
+  /*MAPs*/
+  #maps {
+    width: 100%;
+  }
+
+  .index_hitta {
+    width: 90%;
+  }
+
+
   .konsert_boxer {
     height: 300vh;
   }
