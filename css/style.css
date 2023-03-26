@@ -358,7 +358,7 @@ p {
 /* index about section end--------------------------------------- */
 
 .konsert_boxer {
-  height: 80vh;
+  height: 85vh;
 
   display: flex;
   flex-direction: column;
@@ -499,10 +499,49 @@ footer a:hover {
 }
 /* FOOOOOOOOOOOOOTER END*/
 
+/* Swiper container stylng */
+.swiper {
+  display: none;
+  width: 80%;
+  height: 90%;
+}
+
+/*-----------------------------*/
+
+
 
 @media (max-width: 1000px) {
  
   /* Slider end ------------------------------ */
+
+  .index_konserter {
+    display: none;
+  }
+
+  .swiper {
+    display: inline;
+  }
+
+  .konsert_box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    padding: 1em;
+  }
+
+  .konsert_box button {
+    display: inline;
+  }
+
+  .konsert_box section {
+    height: 30%;
+  }
+
+  .konsert_boxer {
+    height: 80vh;
+  }
 
 }
 
@@ -519,9 +558,6 @@ footer a:hover {
   }
 
 
-  .konsert_boxer {
-    height: 300vh;
-  }
   .index_konserter {
     height: 90%;
     flex-direction: column;
@@ -533,9 +569,6 @@ footer a:hover {
     width: 100%;
   }
 
-  .konsert_box {
-    height: 33%;
-  }
 
   /* about section */
   .about {
