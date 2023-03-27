@@ -3,6 +3,7 @@
   --nav_height: 80px;
 }
 
+/* allmänt */
 * {
   box-sizing: border-box;
   font-family: poppins;
@@ -138,6 +139,8 @@ p {
   width: 70px;
   height: auto;
 }
+
+/* nav slut */
 
 .index_sections {
   height: 94vh;
@@ -399,7 +402,7 @@ footer a:hover {
 #email {
   text-decoration: underline;
 }
-/* FOOOOOOOOOOOOOTER END*/
+/* footer END*/
 
 /* Swiper container stylng */
 .swiper {
@@ -414,7 +417,7 @@ footer a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 120vh;
+  height: 140vh;
   width: 100%;
   grid-template-areas: 
   "a1 a2 a3"
@@ -422,7 +425,7 @@ footer a:hover {
 }
 
 .om_oss_profil_inner {
-  width: 90%;
+  width: 70%;
   height: 80%;
 
   display: flex;
@@ -436,7 +439,7 @@ footer a:hover {
 }
 
 .om_oss_profil_inner img {
-  width: 60%;
+  width: 80%;
 }
 
 .om_oss_profil_outer {
@@ -470,6 +473,7 @@ footer a:hover {
   grid-area: b3;
 }
 
+/* om oss slut */
 
 @media (max-width: 1000px) {
 
@@ -486,7 +490,10 @@ footer a:hover {
     "b2"
     "b3"
   }
- 
+
+  .om_oss_profil_inner {
+    height: 85%;
+  }
   /* om oss end ------------------------------ */
 
   .index_konserter {

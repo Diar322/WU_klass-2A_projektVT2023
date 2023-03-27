@@ -22,7 +22,7 @@
 <body>
   <nav class="top-nav">
     <div>
-      <a class="header_link" href="#"><img id="logo" src="img/logo_trans_comp.png" alt="logo"></a>
+      <a class="header_link" href="index.html"><img id="logo" src="img/logo_trans_comp.png" alt="logo"></a>
     </div>
 
     <input id="menu-toggle" type="checkbox"/>
@@ -45,7 +45,6 @@
     <h1>NTI MID BAND</h1>
   </section>
 
-
   <section class="index_sections konsert_boxer">
     <!-- Desktop -->
     <h2>Aktuella konserter</h2>
@@ -55,7 +54,7 @@
         <section>
           <h3>Mozarts lyriska klarinettkonsert</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, illum.</p>
-          <button onclick="window.location.href='konserter.html'">Köp biljett</button>        
+          <button class="konsert_button">Köp biljett</button>        
         </section>
       </article>
 
@@ -64,7 +63,7 @@
         <section>
           <h3>Rachmaninovs elysiska andra </h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, odit!</p>
-          <button onclick="window.location.href='konserter.html'">Köp biljett</button>    
+          <button class="konsert_button">Köp biljett</button>        
         </section>
       </article>
 
@@ -73,13 +72,13 @@
         <section>
           <h3>Mahlers storslagna femma</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, fuga.</p>
-          <button onclick="window.location.href='konserter.html'">Köp biljett</button>       
+          <button class="konsert_button">Köp biljett</button>        
         </section>
       </article>
     </section>
 
     <!-- Mobile -->
-    <div class="swiper mySwiper">
+    <article class="swiper mySwiper">
       <div class="swiper-wrapper">
         <article class="swiper-slide konsert_box">
           <img src="img/mozart.jpg" alt="mozart_bild">
@@ -87,7 +86,7 @@
             <h3>Mozarts lyriska klarinettkonsert</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, illum.</p>
             <p><strong>29, 30 MAR 18:00</strong></p>
-            <button onclick="window.location.href='konserter.html'">Köp biljett</button>        
+            <button class="konsert_button">Köp biljett</button>        
           </section>
         </article>
   
@@ -97,7 +96,7 @@
             <h3>Rachmaninovs elysiska andra </h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, odit!</p>
             <p><strong>1, 2 APR 19:30</strong></p>
-            <button onclick="window.location.href='konserter.html'">Köp biljett</button>    
+            <button class="konsert_button">Köp biljett</button>        
           </section>
         </article>
         <article class="swiper-slide konsert_box">
@@ -107,13 +106,13 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, fuga.</p>
             <p><strong>21 APR 17:30</strong></p>
 
-            <button onclick="window.location.href='konserter.html'">Köp biljett</button>       
+            <button class="konsert_button">Köp biljett</button>        
           </section>
         </article>
 
       </div>
       <div class="swiper-pagination"></div>
-    </div>
+    </article>
 
 
   </section>
@@ -123,7 +122,7 @@
       <section class="left">
         <h2>Om oss</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus optio perferendis officiis eius earum suscipit harum repellat perspiciatis ipsa possimus?</p>
-        <button type="button" onclick="window.location.href='om_oss.html'">Om ensemblen</button>
+        <button id="index_om_oss_button" type="button">Om ensemblen</button>
       </section>
   
       <section class="right">
@@ -154,9 +153,9 @@
       </section>
     </section>
     <section>
-      <a href="#">Konserter</a>
-      <a href="#">Hitta oss</a>
-      <a href="#">Om oss</a>
+      <a href="konserter.html">Konserter</a>
+      <a href="hitta_hit.html">Hitta oss</a>
+      <a href="om_oss.html">Om oss</a>
     </section>
   </footer>
 
