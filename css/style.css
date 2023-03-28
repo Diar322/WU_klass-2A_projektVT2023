@@ -142,7 +142,7 @@ p {
 
 /* nav slut */
 
-.index_sections {
+.standard_section {
   height: 94vh;
   width: 100%;
 
@@ -413,6 +413,16 @@ footer a:hover {
 /*-----------------------------*/
 
 /* om oss */
+#om_oss_h1 {
+  color: black;
+  position: absolute;
+  font-size: 5em;
+  left: 0;
+  bottom: 0;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
 #grid_wrapper_om_oss {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -449,6 +459,23 @@ footer a:hover {
 
 }
 
+.om_oss_section {
+  background-color: #333;
+}
+
+#vara_medlemmar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#vara_medlemmar h1 {
+  margin-top: 2%;
+  color: black;
+  font-size: 3em;
+}
+
 #violin {
   grid-area: a1;
 }
@@ -476,6 +503,34 @@ footer a:hover {
 /* om oss slut */
 
 @media (max-width: 1000px) {
+
+   /* index om oss section */
+   .about {
+    flex-direction: column-reverse;
+    gap: 5%;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .about_section {
+    width: 100%;
+    height: 98vh;
+
+  }
+
+  .right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* index om oss section end*/
 
   /* om oss */
   #grid_wrapper_om_oss {
@@ -553,33 +608,7 @@ footer a:hover {
   }
 
 
-  /* about section */
-  .about {
-    flex-direction: column-reverse;
-    gap: 5%;
-  }
-
-  .left {
-    width: 100%;
-  }
-
-  .right {
-    width: 100%;
-  }
-
-  .about_section {
-    width: 100%;
-    height: 98vh;
-
-  }
-
-  .right img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  /* about section end*/
+  /* nav */
 
   .top-nav {
     padding: 1em;

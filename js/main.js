@@ -1,5 +1,5 @@
 //  Initialize Swiper
-let swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".my_swiper", {
     pagination: {
       el: ".swiper-pagination",
     },
