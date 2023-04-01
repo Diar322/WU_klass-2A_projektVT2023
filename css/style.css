@@ -38,6 +38,17 @@ p {
   font-size: 1em;
 }
 
+.subsidary_h1 {
+  color: white;
+  position: absolute;
+  font-size: 5em;
+  left: 0;
+  bottom: 0;
+  margin-left: 5%;
+  margin-bottom: 5%;
+
+}
+
 /* Nav och meny */
 
 .top-nav {
@@ -153,7 +164,7 @@ p {
 
 #titel
 {
-  background-image: url("/img/orchestra.jpg");
+  background-image: url("../img/orchestra.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
@@ -337,8 +348,6 @@ p {
   display: inline-block;
 }
 
-
-
 /* ----------------------------------------------- */
 
 .index_hitta {
@@ -355,7 +364,7 @@ p {
 
 #maps {
   width: 90%;
-  height: 80%;
+  height: 100%;
   border-radius: 20px;
 }
 
@@ -413,14 +422,13 @@ footer a:hover {
 /*-----------------------------*/
 
 /* om oss */
-#om_oss_h1 {
-  color: black;
-  position: absolute;
-  font-size: 5em;
-  left: 0;
-  bottom: 0;
-  margin-left: 5%;
-  margin-bottom: 5%;
+#om_oss_titel
+{
+  background-image: url("../img/straksektion.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #grid_wrapper_om_oss {
@@ -502,7 +510,123 @@ footer a:hover {
 
 /* om oss slut */
 
+
+/* hitta oss */
+
+#hitta_oss_titel{
+  background-image: url("../img/maps.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* hitta oss slut */
+
+/* konserter */
+#konserter_titel{
+  background-image: url("../img/konsert.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.konsert_article {
+  height: 100vh;
+
+  padding: 6em;
+
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.konsert_article section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.konsert_article section article {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+}
+
+.konsert_article section article h3 {
+  margin-bottom: 1%;
+}
+
+.konsert_article section h2 { 
+  font-size: 2.875em;
+}
+
+#konsert_datum {
+  text-align: right;
+}
+
+.konsert_article img {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.konsert_article section article iframe {
+}
+
+
+#konsert_rach {
+  background-color: #222;
+  color: white;
+}
+
+
+/* konserter slut */
+@media (max-width: 1500px) { 
+  .konsert_article section article iframe {
+    height: 100%;
+  }
+
+}
+
+
 @media (max-width: 1000px) {
+
+  /* konserter */
+  .konsert_article {
+    height: 145vh;
+
+    padding: 2em;
+
+    flex-direction: column-reverse;
+  }
+  .konsert_article section {
+    height: 75vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .konsert_article img {
+    width: 100%;
+    height: auto;
+
+  }
+
+  .konsert_article section h2 { 
+    font-size: 2em;
+  }
+  
+
+
+  .konsert_article section article iframe {
+    height: 60% ;    
+  }
+
+  .konsert_article section article {
+    height: 40%;
+  }
 
    /* index om oss section */
    .about {
@@ -577,14 +701,40 @@ footer a:hover {
   }
 
   .konsert_boxer {
-    height: 80vh;
+    height: 90vh;
   }
 }
 
-/* Om oss */
 
 /* Aktiveras om skärmen är mindre än 800 px ----------------------------------------------------------------------------*/
 @media (max-width: 800px) {
+
+  /* konserter */
+  #konserter_h1 {
+    word-break: break-all;
+  }
+
+  /* konserter */
+
+  .konsert_article p{
+    font-size: 12px;
+  }
+
+
+  /* konserter slut*/
+
+  /* om oss */
+
+  #grid_wrapper_om_oss {
+    height: 500vh;
+  }
+
+  .om_oss_profil_inner {
+    width: 70%;
+    height:65%
+  }
+
+  /* om oss slut */
 
   /*MAPs*/
   #maps {
@@ -605,6 +755,10 @@ footer a:hover {
 
   .konsert_box img {
     width: 100%;
+  }
+
+  .konsert_boxer {
+    height: 80vh;
   }
 
 
@@ -652,5 +806,6 @@ footer a:hover {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+  /* slut nav */
 }
 
