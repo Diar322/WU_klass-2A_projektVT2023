@@ -164,7 +164,7 @@ p {
 
 #titel
 {
-  background-image: url("../img/orchestra.jpg");
+  background-image: url("../img/orkester/orchestra.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
@@ -424,7 +424,7 @@ footer a:hover {
 /* om oss */
 #om_oss_titel
 {
-  background-image: url("../img/straksektion.jpg");
+  background-image: url("../img/orkester/straksektion.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
@@ -514,7 +514,7 @@ footer a:hover {
 /* hitta oss */
 
 #hitta_oss_titel{
-  background-image: url("../img/maps.jpg");
+  background-image: url("../img/misc/maps.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
@@ -525,7 +525,7 @@ footer a:hover {
 
 /* konserter */
 #konserter_titel{
-  background-image: url("../img/konsert.jpg");
+  background-image: url("../img/orkester/konsert.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
