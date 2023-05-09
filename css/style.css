@@ -21,6 +21,11 @@ html, body {
   background-color: whitesmoke;
 }
 
+iframe {
+  border: 0px;
+  border-radius: 12px;
+}
+
 h1{
   color: white;
   font-size: 8em;

@@ -17,5 +17,4 @@ for (let i = 0; i < collection.length - 1; i++) {
 
 document.getElementById("index_om_oss_button").addEventListener("click", function() {
   window.location.href='om_oss.html';
-});;
-
+});
